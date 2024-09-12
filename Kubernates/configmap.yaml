@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  labels:
+    version: "1.0.0"  # Application version label
+data:
+  SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/bookdb
